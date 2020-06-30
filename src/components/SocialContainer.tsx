@@ -23,7 +23,7 @@ export default function SocialContainer (props: SocialContainerProps) {
           text: "test post",
           user : {
             screen_name: "test user",
-            profile_image_url_https : "https://testimage.png"
+            profile_image_url_https : ""
           }
       }
   ]);

@@ -6,5 +6,5 @@ export default interface Post {
 
 interface User {
     screen_name: string;
-    profile_image_url_https: string;
+    profile_image_url_https?: string;
 }
