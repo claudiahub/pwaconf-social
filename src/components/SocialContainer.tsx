@@ -12,7 +12,7 @@ export default function SocialContainer (props: SocialContainerProps) {
   const [posts, setPosts] = useState<Post[]>([]);
 
   useEffect(() => {
-    const newPosts = trackedTag.map(tag => {
+    trackedTag.map(tag => {
         return tag;
         // Get social post from network https://api.twitter.com/1.1/search/tweets.json
     });
