@@ -27,10 +27,10 @@ export default function SocialContainer (props: SocialContainerProps) {
           }
       }
   ]);
-  }, []);
+  }, [trackedTag]);
 
   // TODO Polling to check for updates on social
-  if(false) { 
+  if(!hasUiUpdates) { 
     setHasUiUpdates(true);
   }
 
