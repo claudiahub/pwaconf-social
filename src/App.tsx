@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import SocialContainer from './components/SocialContainer';
+import banner from './images/pwaconf-banner.png';
 import './App.css';
 
 function App() {
+  const trackedTags = ['pwaconf','pwaconfit','pwaconfit2020'];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      <div className="App-header">
+        <a href="/" title="Home">
+          <img src={banner} className="App-banner" alt="Banner" />
         </a>
-      </header>
+      </div>
+      <h1>What's new on #pwaconfit</h1>
+      <SocialContainer trackedTag={trackedTags}/>
     </div>
   );
 }
