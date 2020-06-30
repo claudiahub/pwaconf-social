@@ -16,7 +16,7 @@ export default function SocialContainer (props: SocialContainerProps) {
         return tag;
         // Get social post from network https://api.twitter.com/1.1/search/tweets.json
     });
-    console.log('new posts : ',newPosts);
+    
     setPosts([
       {
           id: "abc123",
